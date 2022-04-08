@@ -1,13 +1,13 @@
-# Katas-Review
-Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.
+// # Katas-Review
+// Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.
 
-Return your answer as a number.
+// Return your answer as a number.
 
 function sumMix(x){
   return x.map(a => +a).reduce((a, b) => a + b);
 }
 
-Remove every other element in an array 
+// Remove every other element in an array 
 
 function removeEveryOther(arr){
   //your code here
@@ -17,7 +17,7 @@ function removeEveryOther(arr){
   return arr;
 }
 
-Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+// Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
 
 function even_or_odd(number) {
   if (number % 2 == 0) {
@@ -27,3 +27,4 @@ function even_or_odd(number) {
     return "Odd"
   }
 }
+
