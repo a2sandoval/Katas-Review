@@ -66,3 +66,32 @@ function highAndLow(numbers){
   //SUCCESS! 
   
   }
+
+//   Timmy & Sarah think they are in love, but around where they live, they will only know once they pick a flower each. If one of the flowers has an even number of petals and the other has an odd number of petals it means they are in love.
+
+// Write a function that will take the number of petals of each flower and return true if they are in love and false if they aren't.
+
+function lovefunc(flower1, flower2){
+  //there are only two possible ways this would work, if the pedal pair is true and false or false and true
+ if (flower1 %2 == 0 & flower2 %2 !== 0) {
+   // we identify the even number and odd number using the remainder operator if == 0 it's even else false
+   return true;
+ }
+else if (flower1 %2 ==!0 & flower2 %2 == 0){
+  //adding the other condition where it's just flipped, odd and even
+  return true
+}
+
+//Since those are our only true statements, the return is false
+   else {
+     return false;
+   }
+}
+
+//refactord using ternarary operator 
+
+function lovefunc(flower1, flower2) {
+  return flower1 %2 == 0 & flower2 %2 !==0 ? true
+  : flower1 %2 ==!0 & flower2 %2 == 0 ? true
+  : false;
+}
